@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+                prog 4
+        </title>
+        <style>
+            button{
+                padding: 10px 30px;
+                font-size: 15px;
+                font-weight:bold;
+                background-color:beige;
+                border: none;
+                border-radius: 10px;
+            }
+            td
+            {
+              padding: 10px;  
+            }
+        </style>
+        <script>
+            function findvow()
+            {   
+                var flag = false;
+                var o1 = document.querySelector("#op1").value;
+                for(var i=0;i<o1.length;i++)
+                {
+                    switch(o1[i])
+                    {
+                        case 'a':
+                        case 'e':
+                        case 'i':
+                        case 'o':
+                        case 'u': flag = true;
+                    }
+                    if(flag) break;
+                }
+                document.querySelector("#res1").textContent = i;
+            }
+            function findrev()
+            {
+                var o2 = document.querySelector("#op2").value;
+                var rev = '';
+                rev = o2.split('').reverse().join('');
+                document.querySelector("#res2").textContent = rev;
+            }
+        </script>
+    </header>
+    <body style="background-color: wheat;">
+        <div>
+            <table>
+                <tr>
+                    <td><input id="op1" placeholder="String"/></td>
+                    <td id='res1'>RESULT ONE</td>
+                    <td><button onclick="findvow()" type="button"> VOWEL </button></td>
+                </tr>
+                <tr>
+                    <td><input id="op2" placeholder="Num"/></td>
+                    <td id='res2'>RESULT TWO</td>
+                    <td><button onclick="findrev()" type="button"> REVERSE </button></td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>

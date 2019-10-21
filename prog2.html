@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+                SqCu
+        </title>
+        <style>
+            button{
+                padding: 15px 30px;
+                font-size: 15px;
+                font-weight:bold;
+                background-color:beige;
+                border: none;
+                border-radius: 10px;
+            }
+            header,h3{
+                font-style: italic;
+                font-family: cursive;
+            }
+            table,tr,th,td{
+                border: 2px solid black;
+                border-collapse: collapse;
+                padding: 10px;
+                color:chartreuse;
+            }
+            th{
+                color: aquamarine;
+            }
+
+        </style>
+        <script>
+            function disp()
+            {
+                var table = document.querySelector("table");
+                for(var i=1;i<=10;i++)
+                {
+                    var el = document.createElement('td');
+                    el.textContent = i;
+                    var sq = document.createElement('td');
+                    sq.textContent = i*i;
+                    var cu = document.createElement('td');
+                    cu.textContent = i*i*i;
+
+                    var row = document.createElement('tr');
+
+                    row.appendChild(el);
+                    row.appendChild(sq);
+                    row.appendChild(cu);
+                    table.append(row);
+                }
+                var button = document.querySelector("button");
+                button.setAttribute("disabled","true");
+            }
+        </script>
+    </head>
+    <body style="background-color: indianred">
+        <header>
+            <h1>SqCu</h1>
+        </header>
+        <section>
+            <table> 
+                <tr>
+                    <th>Num</th><th>Sq</th><th>Cu</th>
+                </tr>
+            </table>
+            <button onclick="disp()">Click Me!</button>
+        </section>
+    </body>
+
+</html>

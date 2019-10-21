@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TEXTS</title>
+        <style>
+            button{
+                position: absolute;
+                bottom: 0;
+            }
+        </style>
+        <script>
+            var type = 1, i=5;
+            function toggle() {
+                var ptag = document.querySelector('p');
+                if (type){
+                    ptag.textContent = "Text Growing";
+                    ptag.style.color = 'red';
+                    i++;
+                    ptag.style.fontSize = `${i}pt`;
+                    if (i >= 50) type = 0;
+                }
+                else{
+                    ptag.textContent = "Text Shrinking"
+                    ptag.style.color = 'blue';
+                    i--;
+                    ptag.style.fontSize = `${i}pt`;
+                    if (i<= 5) type = 1;
+                }
+                setTimeout(toggle,100);
+            }
+        </script>
+    </head>
+    <body style="text-align: center;">
+        <p></p>
+        <button onclick="toggle()">START</button>
+    </body>
+</html>

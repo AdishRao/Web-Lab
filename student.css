@@ -1,0 +1,69 @@
+Students{
+    background-color: aqua;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+Student{
+    display: block;
+    margin-bottom: 30pt;
+    margin-left: 10pt;
+}
+
+sname{
+    display: block;
+    font-size: 15pt;
+    text-transform: uppercase;
+    color: blue;
+}
+
+usn:before {
+    content: "USN:";
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+usn {
+    display: block;
+    font-size: 15pt;
+    color: blue;
+}
+
+college:before {
+    content: "COLLEGE:";
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+college {
+    display: block;
+    font-size: 15pt;
+    color: blue;
+}
+
+branch:before {
+    content: "BRANCH:";
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+branch {
+    display: block;
+    font-size: 15pt;
+    color: blue;
+}
+
+email:before {
+    content: "EMAIL:";
+    font-size: 14pt;
+    font-weight: bold;
+}
+
+email {
+    display: block;
+    font-size: 15pt;
+    color: blue;
+}
+
+usn,college,branch,email {
+    margin-left: 10px;
+}

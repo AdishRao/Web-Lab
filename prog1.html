@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <title>
+                This be a calculator
+        </title>
+        <style>
+            button{
+                padding: 15px 30px;
+                font-size: 15px;
+                font-weight:bold;
+                background-color:beige;
+                border: none;
+                border-radius: 10px;
+            }
+            header,h3{
+                font-style: italic;
+                font-family: cursive;
+            }
+        </style>
+        <script>
+            function calc(op)
+            {
+                var o1 = document.querySelector("#op1").value;
+                var o2 = document.querySelector("#op2").value;
+                o1 = Number.parseInt(o1);
+                o2 = Number.parseInt(o2);
+                var Result;
+                switch (op) { 
+                    case '+': Result = o1 + o2;
+                              break;
+                    case '-': Result = o1 - o2;
+                              break;
+                    case '*': Result = o1 * o2;
+                              break;
+                    case '/': if (o2 == 0) alert("Div by 0!")
+                              else { Result = o1/o2;}
+                }
+                document.querySelector("span").textContent = Result;
+            }
+        </script>
+    </header>
+    <body style="background-color: indianred">
+        <header>
+            <h1>Simple Calculator</h1>
+        </header>
+        <section>
+            <input id="op1" placeholder="First Operand"/>
+            <input id="op2" placeholder="Second Operand"/>
+            <br>
+            <button onclick="calc('+')" type="button"> + </button>
+            <button onclick="calc('-')" type="button"> - </button>
+            <button onclick="calc('*')" type="button"> * </button>
+            <button onclick="calc('/')"type="button"> / </button>
+            <br>
+            <h3>
+               Result: <span> </span>  
+            </h3>
+        </section>
+    </body>
+
+</html>

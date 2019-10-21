@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding ="utf-8"?>
+<?xml-stylesheet type="text/css" href = "student.css"?>
+
+<Students>
+    <Student>
+        <sname> Adish Rao </sname>
+        <usn> 1PE16CS006 </usn>
+        <college> PESIT-BSC </college>
+        <branch> CSE </branch>
+        <email> adish.rao98@gmail.com </email>
+    </Student>
+
+    <Student>
+        <sname> Adish</sname>
+        <usn> 1PE16CS06 </usn>
+        <college> PESIT-BSC </college>
+        <branch> CSE </branch>
+        <email> adishrao98@gmail.com </email>
+    </Student>
+
+    <Student>
+        <sname> Rao </sname>
+        <usn> 1PE16CS6 </usn>
+        <college> PESIT-BSC </college>
+        <branch> CSE </branch>
+        <email> adish98@gmail.com </email>
+    </Student>
+</Students>
